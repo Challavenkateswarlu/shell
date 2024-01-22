@@ -1,0 +1,42 @@
+if
+-------------------
+ if [ condition ];
+then
+  statememnt
+fi
+if-else
+--------------------------
+ if [ cond ];
+then
+  statement
+else
+ statement
+fi
+if-elif
+---------------------------
+if [ cond ];
+then
+ statement
+elif [ cond ];
+then
+ statement
+else
+statement
+lopping statements syntax
+--------------------------------------------
+for var in list
+do 
+ statement
+done
+while
+---------------
+while [ cond ]
+do 
+ statement
+done
+until
+-------------------------------
+until [ cond ]
+do 
+ statement
+done
