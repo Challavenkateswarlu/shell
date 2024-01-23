@@ -1,27 +1,35 @@
-#! bin/bash
+#! /bin/bash
 #
 #
-# 
- 	echo "enter the age"
- 	read age
- 	while [ $age -ge 18 ];
-	do
-	echo "enter a salary"
-	read sal
-	if [ $sal -lt 20000 ];
+#
+echo "enter age"
+read a
+if [ $a -lt 18 ];
+then	
+	echo "no income"
+        fi
+
+while  [ $a -ge 18 ]
+do
+	echo "eligible for income"
+	echo "enter salary"
+	read s
+	if [ $s -lt 20000 ];
 	then
 		echo "no tax"
-	elif [ $sal -gt 20000 -a $sal -lt 40000 ];
+		break
+	elif [ $s -gt 20000 -a $s -lt 40000 ];
 	then
-		echo "t6ax is5%"
-	elif [ $sal -ge 40000 ];
+		echo "tax is 5%"
+		break
+	elif [ $s -ge 40000 ];
 	then
 		echo "tax is 10%"
-	elif [ $sal -eq 20000 ];
-	then
-		echo "tax is 2%"
+		break
 	else
-		echo "conditionfalse"
-	fi
-	done
-	echo "no income"
+		echo "tax is 2%"
+		break
+
+	fi	
+	
+done
